@@ -1,0 +1,11 @@
+<!-- Here create a normal page. This view will be added to the app container control of
+the app View in Component.js via pages aggregation and yes add a Page here to contain everythig
+Even if that is not added it works though, it just adds that ugly blue rectangle on top -->
+<mvc:XMLView    id="View1" xmlns="sap.m" 
+                controllerName="sap.ui.demo.controller.View1"
+                xmlns:mvc="sap.ui.core.mvc" >
+    <Page >
+        <Text text="{i18n>TXT_HELLO}"></Text>
+        <Button text="{i18n>BTN_NEXT}" press=".onNext"></Button>
+    </Page>
+</mvc:XMLView>

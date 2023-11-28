@@ -1,0 +1,8 @@
+<mvc:XMLView    id="View2" xmlns="sap.m" 
+                controllerName="sap.ui.demo.controller.View2"
+                xmlns:mvc="sap.ui.core.mvc" >
+    <Page >
+        <Text text="{i18n>TXT_HELLO_WORLD}"></Text>
+        <Button text="{i18n>BTN_BACK}" press=".onBack"></Button>
+    </Page>
+</mvc:XMLView>

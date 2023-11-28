@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>24-Routing</title>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-bindingSyntax="complex"
+                data-sap-ui-resourceroots='{
+                    "sap.ui.demo" : "./"
+                }'>
+        </script>
+        <script>
+            //we need to point to Component.js file in webapp
+            //so create a component container
+            //all we have give here is the address of the root folder 
+            var oComponentContainer = new sap.ui.core.ComponentContainer({
+                name : "sap.ui.demo"
+            });
+            oComponentContainer.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>
