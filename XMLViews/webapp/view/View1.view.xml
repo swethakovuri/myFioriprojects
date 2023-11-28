@@ -1,0 +1,6 @@
+<core:View controllerName="sap.ui.demo.controller.View1" xmlns:core="sap.ui.core"
+xmlns="sap.m">
+<!-- sap.ui.core for views, sap.m for Button, sap.ui.layout for simple form, in the above case
+view belongs to core library so we have to use xmlns before that -->
+<Button id="myView" text="click me" press="myFunction"/>
+</core:View>
