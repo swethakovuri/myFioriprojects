@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_bluecrystal"
+                data-sap-ui-resourceroots='{
+                    "fiori" : "./"
+                }'
+        ></script>
+        <script>
+            // var oView = new sap.ui.view("viewMain",{
+            //     viewName : "sap.ui.demo.view.View1",
+            //     type : "XML"
+            // });
+            // oView.placeAt("content");
+
+            // var oView1 = new sap.ui.view("viewMain1",{
+            //     viewName : "sap.ui.demo.view.Main",
+            //     type : "JS"
+            // });
+            // oView.placeAt("content");
+            // oView1.placeAt("division");
+            var oView = new sap.ui.view("idLogin",{
+                viewName : "fiori.view.Login",
+                type     : "XML"
+            })
+            oView.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+        <div id="division"></div>
+    </body>
+</html>
