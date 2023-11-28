@@ -7,6 +7,7 @@ controllerName="Model.controller.Main">
 <Input width="30%" />
 <Label text="Salary"/>
 <Input width="30%" />
+<Label text="Gender"/>
 <Label/>
 <Button text="Click Me" width="30%"/>
 
