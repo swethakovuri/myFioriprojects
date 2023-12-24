@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+<Select items="{default>/cities}">
+<items>
+<core:Item key="{default>name}" text="{default>name}" />
+
+</items>
+</Select>
+</core:FragmentDefinition>

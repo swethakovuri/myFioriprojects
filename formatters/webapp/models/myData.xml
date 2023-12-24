@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<empStr>
+<Empid>143</Empid>
+<EmpName>Sriansh</EmpName>
+<Salary>12000</Salary>
+<Gender>Male</Gender>
+</empStr>
+<empTab>
+<row>
+<Empid>1</Empid>
+<EmpName>Rani</EmpName>
+<Salary>5000</Salary>
+<Currency>AUD</Currency>
+<Gender>Male</Gender>
+<Status>T</Status>
+</row>
+<row>
+<Empid>2</Empid>
+<EmpName>Johar</EmpName>
+<Salary>5000</Salary>
+<Currency>INR</Currency>
+<Gender>Male</Gender>
+<Status>E</Status>
+</row>
+</empTab>
+</data>

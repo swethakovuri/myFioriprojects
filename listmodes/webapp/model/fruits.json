@@ -1,0 +1,106 @@
+{
+    "fruits" : [
+      {
+        "name" : "Apple",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg",
+        "price" : 35,
+        "status": "Available",
+        "type"  : "Alkaline"
+      },
+      {
+        "name" : "Banana",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg",
+        "price" : 12,
+        "status": "Available",
+        "type"  : "Alkaline"
+      },
+      {
+        "name" : "Grapes",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg",
+        "weight": 0.1,
+        "price" : 45,
+        "status": "Not Available",
+        "type"  : "Alkaline"
+      },
+      {
+        "name" : "Pineapple",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg",
+        "price" : 200,
+        "status": "Not Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Avacado",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/f/f2/Persea_americana_fruit_2.JPG",
+        "price" : 20,
+        "status": "Not Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Blueberry",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/1/15/Blueberries.jpg",
+        "price" : 15,
+        "status": "Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Cherry",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/0/00/Cherries_summerland.jpg",
+        "price" : 45,
+        "status": "Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Jackfruit",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/d/d0/Artocarpus_heterophyllus_fruits_at_tree.jpg",
+        "price" : 90,
+        "status": "Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Kiwifruit",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg",
+        "price" : 30,
+        "status": "Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Lemon",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lemon_-_whole_and_split.jpg",
+        "price" : 5,
+        "status": "Available",
+        "type"  : "Acidic"
+      },
+      {
+        "name" : "Watermelon",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/a/ae/Watermelon_cross_BNC.jpg",
+        "price" : 60,
+        "status": "Available",
+        "type"  : "Acidic"
+
+      },
+      {
+        "name" : "Orange",
+        "image" : "https://upload.wikimedia.org/wikipedia/commons/e/e3/Oranges_-_whole-halved-segment.jpg",
+        "price" : 100,
+        "status": "Out of Stock",
+        "type"  : "Acidic"
+      }      
+    ],
+    "suppliers": [
+      {
+        "name": "Mhadev suppliers",
+        "sincewhen": 1977,
+        "ContactPerson":"Shiva",
+        "contactNo": 90389484844,
+        "city":"NewDelhi"
+            },
+            {
+              "name": "Ranmm suppliers",
+              "sincewhen": 1977,
+              "ContactPerson":"Ram",
+              "contactNo": 90389484844,
+              "city":"NewDelhi"
+                  }
+    ]
+  }

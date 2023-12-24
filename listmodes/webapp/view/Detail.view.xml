@@ -1,0 +1,53 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+controllerName="Fioriapp.controller.Detail">
+<Page title="{default>name}" showNavButton="true" navButtonPress="onBack">
+<Button text="Back" press="onBack"/>
+<IconTabBar>
+<items>
+<IconTabFilter text="More details" icon="sap-icon://warning">
+<f:SimpleForm>
+<f:content>
+
+<Label text="Name"/>
+<Text text="{default>name}"/>
+<Label text="Type"/>
+<Text text="{default>type}"/>
+</f:content>
+</f:SimpleForm>
+</IconTabFilter>
+<IconTabFilter text="Suppliers" icon="sap-icon://supplier">
+<Table items="{default>/suppliers}">
+<columns>
+<Column>
+    <header><Text text="name"/></header>
+</Column>
+<Column>
+    <header><Text text="sincewhen"/></header>
+</Column>
+<Column>
+    <header><Text text="ContactPerson"/></header>
+</Column>
+<Column>
+    <header><Text text="contactNo"/></header>
+</Column>
+</columns>
+<items>
+<ColumnListItem >
+<cells>
+<Text text="{default>name}"/>
+<Text text="{default>sincewhen}"/>
+<Text text="{default>ContactPerson}"/>
+<Text text="{default>contactNo}"/>
+</cells>
+</ColumnListItem>
+</items>
+</Table>
+</IconTabFilter>
+<IconTabFilter text="More details" icon="sap-icon://home"></IconTabFilter>
+</items>
+</IconTabBar>
+
+<Button text="Check" id="idCheck"/>
+<Text text="{default>/demo}"/>
+</Page>
+</mvc:View>

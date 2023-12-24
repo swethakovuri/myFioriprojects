@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+xmlns:core="sap.ui.core"
+controllerName="Fioriapp.controller.Detail">
+<Page title="{default>name}" showNavButton="true" navButtonPress="onBack">
+<Button text="Back" press="onBack"/>
+<IconTabBar>
+<items>
+<IconTabFilter text="More details" icon="sap-icon://warning">
+<core:Fragment fragmentName="Fioriapp.fragments.additionalData" type="XML" />
+<core:Fragment fragmentName="Fioriapp.fragments.additionalData" type="XML" />
+</IconTabFilter>
+<IconTabFilter text="Suppliers" icon="sap-icon://supplier">
+<core:Fragment fragmentName="Fioriapp.fragments.supplier" type="XML" />
+</IconTabFilter>
+<IconTabFilter text="More details" icon="sap-icon://home"></IconTabFilter>
+</items>
+</IconTabBar>
+
+<Button text="Check" id="idCheck"/>
+<Text text="{default>/demo}"/>
+</Page>
+</mvc:View>

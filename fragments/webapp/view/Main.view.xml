@@ -1,0 +1,45 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fioriapp.controller.Main">
+<Page title="first page">
+<headerContent>
+<Button icon="sap-icon://action"/>
+<Button text="Go to next" press="onNext"/>
+</headerContent>
+<SearchField id="idSearch" search="onSearch"></SearchField>
+<List id="idList" items="{path : 'default>/fruits'}" selectionChange="onItemPress" 
+mode="SingleSelectMaster" delete="onDelete">
+<items>
+<!-- <DisplayListItem value="Apple" label="Best Antibiotic"></DisplayListItem>
+<StandardListItem icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg" description="Rich in vitamin c" title="Pineapple" ></StandardListItem>
+<InputListItem >
+<HBox>
+    <Text class="sapUiTinyMarginTop" text="Which fruit do u like"/>
+     <Input width="5rem"/>
+</HBox>
+</InputListItem>
+<CustomListItem >
+<Label text="Do u like fresh fruits" />
+<Switch ></Switch>
+<FeedListItem sender="Biden"></FeedListItem>
+<ActionListItem text="Order now" press="onOrder"></ActionListItem>
+</CustomListItem> -->
+<ObjectListItem  title="{default>name}" icon="{default>image}"
+intro="{default>type}" number="{default>price}">
+<firstStatus>
+<ObjectStatus text="{default>status}" state="{
+                path:'default>status',
+             formatter: '.formatter.getStatus'}" ></ObjectStatus>
+</firstStatus>
+
+</ObjectListItem>
+
+</items>
+</List>
+<footer>
+<Toolbar>
+<ToolbarSpacer />
+<Button text="Show me" type="Accept" press="OnShowSelItems"/>
+</Toolbar>
+
+</footer>
+</Page>
+</mvc:View>

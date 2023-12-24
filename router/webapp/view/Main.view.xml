@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fioriapp.controller.Main">
+<Page title="first page">
+<headerContent>
+<Button icon="sap-icon://action"/>
+</headerContent>
+<Button text="Go to next" press="onNext"/>
+<Text text="{default>/demo}"/>
+</Page>
+</mvc:View>

@@ -1,0 +1,73 @@
+<mvc:View xmlns:core="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+xmlns:c="sap.ui.core"
+xmlns:t="sap.ui.table"
+controllerName="Model.controller.Main">
+<f:SimpleForm editable="true" id="idSimpleForm">
+<f:title>
+<c:Title text="Employee details"/>
+</f:title>
+<Label text="{i18n>XFLD_Empid}" />
+<!-- <Input id="idEmp" value="{/empStr/Empid}" width="30%" /> -->
+<Input id="idEmp" value="{Empid}" width="30%" />
+<Label text="EmpName"/>
+<Input value="{ path: 'EmpName',
+formatter: '.formatter.changeNameToUC'}"
+    width="30%"  />
+<Label text="Salary"/>
+<Input id="idSal" value="{Salary}" width="30%"/>
+<Label text="Gender"/>
+<Input id="idGender" value="{Gender}" width="30%" />
+<Label/>
+<Button text="Submit" press="onClick" width="30%"/>
+<Switch id="idSwitch" change="onChange"/>
+</f:SimpleForm>
+<!-- <t:Table rows="{/empTab/row}" selectionMode="Single" rowSelectionChange="onRowSelect"> /> -->
+<t:Table id="idTable" selectionMode="Single" rowSelectionChange="onRowSelect">
+<t:columns>
+<t:Column label="Empid">
+<t:template>
+<Text text="{Empid}"/>
+</t:template>
+</t:Column>
+<t:Column label="EmpName">
+<t:template>
+<Text text="{EmpName}"/>
+</t:template>
+</t:Column>
+<t:Column label="Salary">
+<t:template>
+<Text text="{ 
+    parts: [ {path: 'Salary' },{path: 'Currency'} ],
+   formatter: '.formatter.formatCurrency' }" />
+</t:template>
+</t:Column>
+<t:Column label="Gender">
+<t:template>
+<Text text="{Gender}"/>
+</t:template>
+</t:Column>
+<t:Column label="Smoker">
+<t:template>
+<CheckBox selected="{= ${Smoker} === 'true' ? true : false}"/>
+</t:template>
+</t:Column>
+<t:Column label="marital status">
+<t:template>
+<Select selectedKey="{mstat}">
+<items>
+<c:Item key="M" text="Married"/>
+<c:Item key="S" text="Single"/>
+</items>
+</Select>
+</t:template>
+</t:Column>
+<t:Column label="Status">
+<t:template>
+<ObjectStatus text= "{path : 'eStat', formatter: '.formatter.getStatus'}" 
+              state="{path : 'eStat', formatter: '.formatter.getStatusColor'}" />
+</t:template>
+</t:Column>
+</t:columns>
+</t:Table>
+
+</mvc:View>

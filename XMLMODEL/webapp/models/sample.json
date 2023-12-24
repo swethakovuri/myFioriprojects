@@ -1,0 +1,35 @@
+{
+"empStr":{
+    "Empid": 143,
+    "EmpName": "Sriansh",
+    "Salary": 5000,
+    "Gender": "Male",
+    "lock":false
+},
+"empTab":[
+    {   
+    "Empid": 111,
+    "EmpName": "Ramu",
+    "Salary": 5000,
+    "Currency":"EUR",
+    "Gender": "Male",
+    "mstat": "S",
+    "Smoker": true,
+    "rating": 5
+    },
+    {    
+        "Empid": 222,
+        "EmpName": "Raju",
+        "Salary": 5000,
+        "Currency":"USD",
+        "Gender": "Male",
+        "mstat": "M",
+        "Smoker": false,
+        "rating": 5
+     }
+
+]
+
+
+}
+

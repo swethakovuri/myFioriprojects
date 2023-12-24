@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<empStr>
+<Empid>143</Empid>
+<EmpName>Sriansh</EmpName>
+<Salary>200000</Salary>
+<Gender>Male</Gender>
+</empStr>
+<empTab>
+<row>
+<Empid>1</Empid>
+<EmpName>karen</EmpName>
+<Salary>8000</Salary>
+<Gender>Male</Gender>
+</row>
+<row>
+<Empid>2</Empid>
+<EmpName>Johar</EmpName>
+<Salary>5000</Salary>
+<Gender>Male</Gender>
+</row>
+</empTab>
+</data>

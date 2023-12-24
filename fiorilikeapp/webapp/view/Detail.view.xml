@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+controllerName="Fioriapp.controller.Detail">
+<Page title="Next page" showNavButton="true" navButtonPress="onBack">
+<Button text="Back" press="onBack"/>
+<Button text="Check" id="idCheck"/>
+</Page>
+</mvc:View>

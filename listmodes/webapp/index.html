@@ -5,15 +5,16 @@
                 data-sap-ui-theme="sap_bluecrystal"
                 data-sap-ui-bindingSyntax="complex"
                 data-sap-ui-resourceroots='{
-                    "Model" : "./"
+                    "Fioriapp" : "./"
                 }'
         ></script>
         <script>
-            var oView = new sap.ui.view({
-                viewName : "Model.view.Main",
-                type     : "XML"
-            });
-            oView.placeAt("content");
+           //to test component.js we need a component container which tests our component.js
+           var oCompContainer = new sap.ui.core.ComponentContainer({
+             name: "Fioriapp"
+           });
+           oCompContainer.placeAt("content");
+
             </script>
     </head>
     <body class="sapUiBody">
